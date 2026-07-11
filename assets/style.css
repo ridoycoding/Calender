@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background:linear-gradient(135deg, #FF3E96 0%, #FFB6C1 40%, #FFE4B5 70%, #FFFF00 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+
+}
+
+#dateBox {
+    display: flex;
+    flex-direction: row;
+    width: 260px;
+    height: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+#dayHalf {
+    background: #e3b23c;
+    color: #201705;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    animation: fade 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#dateHalf {
+    background: #20264a;
+    color: #f1ede4;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    animation: fade 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
